@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+        #image {
+            display: none;
+        }
+        body{
+            background-color: cadetblue;
+        }
+        
+        
+    </style>
+</head>
+<center>
+<body>
+    <div>
+        <h1>Your favorite Animal</h1>
+        <h3>Click on the button to see image</h3>
+ 
+        <button type="button" onclick="show_image('dog' );"id="dog">DOG</button>
+
+        <button type="button"onclick="show_image('cat');"id="cat">CAT</button>
+    
+        <button type="button"onclick="show_image('tiger');"id="tiger">TIGER</button>
+       
+    </div><br>
+    
+
+
+
+
+
+
+        
+ 
+   
+
+<script>
+
+
+
+    function show_image(animal) {
+        var src = "";
+    
+        if(animal== "dog"){
+            src ="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80";
+        }else if(animal == "cat"){
+            src = "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1686&q=80";
+    
+        }
+        else if(animal == "tiger"){
+            src="https://images.unsplash.com/photo-1615963244664-5b845b2025ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+        }
+    
+    
+        var img = document.createElement("img");
+        img.src = src;
+        img.width = 500;
+        img.height = 500;
+        img.alt = "animal";
+    
+        
+        document.body.appendChild(img);
+    }
+    
+    
+    
+     
+            
+        </script>
+   
+   
+    
+</body>
+</center> 
+</html>
